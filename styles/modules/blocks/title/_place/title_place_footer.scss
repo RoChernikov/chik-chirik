@@ -1,0 +1,21 @@
+.title_place_footer {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.19;
+  margin-top: 60px;
+  max-width: 460px;
+}
+
+@media screen and (max-width: 967px) {
+  .title_place_footer {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .title_place_footer {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}

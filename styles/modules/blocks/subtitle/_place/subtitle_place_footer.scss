@@ -1,0 +1,10 @@
+.subtitle_place_footer {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 679px) {
+  .subtitle_place_footer {
+    margin-top: 14px;
+    font-size: 12px;
+  }
+}
