@@ -1,0 +1,12 @@
+.header {
+  background-color: $darkAccent;
+  width: 100%;
+  border-radius: 20px;
+  color: $SubColor;
+}
+
+@media screen and (max-width: 483px) {
+  .header {
+    border-radius: 10px;
+  }
+}

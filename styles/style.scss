@@ -1,0 +1,26 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+//--+++Переменные+++--
+@import './modules/veriables.scss';
+//--+++Страница+++--
+@import './modules/blocks/page/page.scss';
+@import './modules/blocks/page-text/page-text.scss';
+@import './modules/blocks/page-section/page-section.scss';
+@import './modules/blocks/page-section/_place/page-section_place_page.scss';
+@import './modules/blocks/page-section/_place/page-section_place_header.scss';
+@import './modules/blocks/page-section/_place/page-section_place_footer.scss';
+@import './modules/blocks/logo/logo.scss';
+@import './modules/blocks/title/title.scss';
+@import './modules/blocks/title/_place/title_place_header.scss';
+@import './modules/blocks/subtitle/subtitle.scss';
+@import './modules/blocks/subtitle/_place/subtitle_place_header.scss';
+@import './modules/blocks/button/button.scss';
+@import './modules/blocks/button/_place/button_place_header.scss';
+//--+++Шапка сайта+++--
+@import './modules/blocks/header/header.scss';
+@import './modules/blocks/header/__wrapper/header__wrapper.scss';
+@import './modules/blocks/header/__image/header__image.scss';
+//--+++Основная часть сайта+++--
+@import './modules/blocks/main/main.scss';
+//--+++Подвал сайта+++--
+@import './modules/blocks/footer/footer.scss';

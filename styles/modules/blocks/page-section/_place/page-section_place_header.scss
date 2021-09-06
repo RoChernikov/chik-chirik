@@ -1,0 +1,12 @@
+.page-section_place_header {
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) auto;
+  grid-template-rows: repeat(5, min-content);
+  align-items: start;
+}
+
+@media screen and (max-width: 767px) {
+  .page-section_place_header {
+    grid-template-columns: auto;
+  }
+}

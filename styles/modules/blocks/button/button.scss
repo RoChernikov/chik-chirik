@@ -1,0 +1,33 @@
+.button {
+  width: 240px;
+  height: 54px;
+  border: none;
+  border-radius: 8px;
+  color: #222;
+  font-family: $primaryFont;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 93%;
+  }
+}
+
+@media screen and (max-width: 967px) {
+  .button {
+    height: 48px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    height: 44px;
+    width: 260px;
+    font-size: 12px;
+    line-height: 2;
+  }
+}
