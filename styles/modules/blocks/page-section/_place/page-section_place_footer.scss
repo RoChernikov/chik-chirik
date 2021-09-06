@@ -1,24 +1,7 @@
 .page-section_place_footer {
   position: relative;
-  height: 470px;
-  display: grid;
-  grid-template-columns: minmax(min-content, max-content) auto;
-  grid-template-rows: repeat(3, min-content);
-  align-items: start;
-
+  display: flex;
+  flex-direction: column;
   -webkit-clip-path: inset(-100vw -100vw 0 -100vw);
   clip-path: inset(-100vw -100vw 0 -100vw);
-}
-
-@media screen and (max-width: 832px) {
-  .page-section_place_footer {
-    height: 400px;
-  }
-}
-
-@media screen and (max-width: 679px) {
-  .page-section_place_footer {
-    height: min-content;
-    grid-template-columns: minmax(min-content, max-content);
-  }
 }
