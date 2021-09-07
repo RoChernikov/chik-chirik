@@ -1,6 +1,10 @@
 .subtitle_place_header {
   margin-top: 28px;
+  font-size: 18px;
+  line-height: 1.4;
   width: 450px;
+  opacity: 70%;
+  color: $secondaryFontColor;
 }
 
 @media screen and (max-width: 967px) {

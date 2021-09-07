@@ -1,29 +1,16 @@
 .title_place_header {
+  font-weight: 700;
   margin-top: 60px;
 }
 
 @media screen and (max-width: 967px) {
   .title_place_header {
     margin-top: 50px;
-    font-size: 33px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .title_place_header {
-    justify-self: center;
   }
 }
 
 @media screen and (max-width: 626px) {
   .title_place_header {
     font-size: 24px;
-    // width: 369px;
   }
 }
-
-// @media screen and (max-width: 428px) {
-//   .title_place_header {
-//     width: 260px;
-//   }
-// }

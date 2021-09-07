@@ -1,7 +1,15 @@
 .subtitle {
   font-family: $primaryFont;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.4;
-  opacity: 70%;
+  line-height: 1.5;
+  opacity: 60%;
+  color: $primaryFontColor;
+}
+
+@media screen and (max-width: 768px) {
+  .subtitle {
+    font-size: 15px;
+    line-height: 1.3;
+  }
 }

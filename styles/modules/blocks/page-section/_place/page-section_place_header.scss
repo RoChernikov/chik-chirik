@@ -5,8 +5,21 @@
   align-items: start;
 }
 
+@media screen and (max-width: 768px) {
+  .page-section_place_header {
+    padding: 0 50px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .page-section_place_header {
     grid-template-columns: auto;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .ppage-section_place_header {
+    padding: 0 20px;
   }
 }

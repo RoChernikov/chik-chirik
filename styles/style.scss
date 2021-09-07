@@ -9,22 +9,34 @@
 @import './modules/blocks/page-section/_place/page-section_place_page.scss';
 @import './modules/blocks/page-section/_place/page-section_place_header.scss';
 @import './modules/blocks/page-section/_place/page-section_place_footer.scss';
+@import './modules/blocks/page-section/_place/page-section_place_proposal.scss';
 @import './modules/blocks/logo/logo.scss';
 @import './modules/blocks/title/title.scss';
+@import './modules/blocks/title/_size/title_size_big.scss';
+@import './modules/blocks/title/_size/title_size_small.scss';
+@import './modules/blocks/title/_theme/title_theme_light.scss';
 @import './modules/blocks/title/_place/title_place_header.scss';
 @import './modules/blocks/title/_place/title_place_footer.scss';
+@import './modules/blocks/title/_place/title_place_form.scss';
 @import './modules/blocks/subtitle/subtitle.scss';
 @import './modules/blocks/subtitle/_place/subtitle_place_header.scss';
 @import './modules/blocks/subtitle/_place/subtitle_place_footer.scss';
+@import './modules/blocks/subtitle/_place/subtitle_place_form.scss';
 @import './modules/blocks/button/button.scss';
+@import './modules/blocks/button/_theme/button_theme_dark.scss';
 @import './modules/blocks/button/_place/button_place_header.scss';
 @import './modules/blocks/button/_place/button_place_footer.scss';
+@import './modules/blocks/button/_place/button_place_form.scss';
 //--+++Шапка сайта+++--
 @import './modules/blocks/header/header.scss';
 @import './modules/blocks/header/__wrapper/header__wrapper.scss';
 @import './modules/blocks/header/__image/header__image.scss';
 //--+++Основная часть сайта+++--
-@import './modules/blocks/main/main.scss';
+//--+++Форма+++--
+@import './modules/blocks/form/form.scss';
+@import './modules/blocks/form/__field/form__field.scss';
+@import './modules/blocks/form/__input/form__input.scss';
+@import './modules/blocks/form/__textarea/form__textarea.scss';
 //--+++Подвал сайта+++--
 @import './modules/blocks/footer/footer.scss';
 @import './modules/blocks/footer/__image/footer__image.scss';

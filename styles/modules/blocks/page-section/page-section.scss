@@ -1,13 +1,18 @@
 .page-section {
-  // border: .5px dashed red;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 50px;
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 483px) {
+@media screen and (max-width: 768px) {
   .page-section {
     padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .page-section {
+    padding: 0;
   }
 }

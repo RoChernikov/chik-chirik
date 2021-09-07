@@ -16,7 +16,8 @@
   <header class="header">
     <div class="page-section page-section_place_header">
       <div class="logo"></div>
-      <h1 class="title title_place_header page-text">Не&nbsp;умеете рисовать? Не&nbsp;беда!</h1>
+      <h1 class="title title_size_big title_theme_light title_place_header page-text">Не&nbsp;умеете рисовать?
+        Не&nbsp;беда!</h1>
       <p class="subtitle subtitle_place_header page-text">С&nbsp;помощью нашего приложения вы&nbsp;можете чиркануть
         каляку
         и&nbsp;получить
@@ -27,11 +28,25 @@
 
   </header>
   <!-- Основная часть сайта -->
-  <main class="main page-section"></main>
+  <main class="main page-section">
+    <section class="proposal page-section page-section_place_proposal">
+      <form class="form" name="proposal-form" action="#">
+        <h3 class="title title_size_small title_place_form page-text">Хотите нам что-то посоветовать?
+        </h3>
+        <p class="subtitle subtitle_place_form page-text">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами.</p>
+        <fieldset class="form__field">
+          <input type="text" class="form__input" name="name" placeholder="Ваше Имя" required />
+          <input type="text" class="form__input" name="email" placeholder="Контактный Email" required />
+          <textarea name="message" class="form__textarea" placeholder="Сообщение" required></textarea>
+          <input type="submit" class="button button_theme_dark button_place_form" value="Оставить заявку" />
+        </fieldset>
+      </form>
+    </section>
+  </main>
   <!-- Подвал сайта -->
   <footer class="footer">
     <div class="page-section page-section_place_footer">
-      <h3 class="title title_place_footer page-text">Хотите скачать приложение?</h3>
+      <h3 class="title title_size_small title_theme_light title_place_footer page-text">Хотите скачать приложение?</h3>
       <p class="subtitle subtitle_place_footer page-text">Качайте в ЭпСтор и ГуглПлэй.</p>
       <button class="button button_place_footer">Уже скоро!</button>
       <div class="footer__image"></div>
