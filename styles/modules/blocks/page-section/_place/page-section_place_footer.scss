@@ -5,3 +5,15 @@
   -webkit-clip-path: inset(-100vw -100vw 0 -100vw);
   clip-path: inset(-100vw -100vw 0 -100vw);
 }
+
+@media screen and (max-width: 768px) {
+  .page-section_place_footer {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .page-section_place_footer {
+    padding: 0 20px;
+  }
+}
