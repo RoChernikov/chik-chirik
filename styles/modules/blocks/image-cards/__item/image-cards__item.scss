@@ -1,0 +1,28 @@
+.image-cards__item {
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-cards__item {
+    margin-right: 15px;
+  }
+}
+
+// <--+++ВРЕМЕННО+++-->
+@media screen and (max-width: 540px) {
+  .image-cards__item {
+    margin-right: 0;
+
+    &:nth-child(2) {
+      display: none;
+    }
+
+    &:last-child {
+      display: none;
+    }
+  }
+}

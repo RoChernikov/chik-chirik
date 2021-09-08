@@ -1,0 +1,15 @@
+.slider_type_img {
+  margin: 120px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .slider_type_img {
+    margin: 70px 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .slider_type_img {
+    padding: 0 20px;
+  }
+}
