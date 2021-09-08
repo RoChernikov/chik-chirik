@@ -5,9 +5,11 @@
 //--+++Страница+++--
 @import './modules/blocks/page/page.scss';
 @import './modules/blocks/page-text/page-text.scss';
+@import './modules/blocks/page-list/page-list.scss';
 @import './modules/blocks/page-section/page-section.scss';
 @import './modules/blocks/page-section/_place/page-section_place_page.scss';
 @import './modules/blocks/page-section/_place/page-section_place_header.scss';
+@import './modules/blocks/page-section/_place/page-section_place_about.scss';
 @import './modules/blocks/page-section/_place/page-section_place_footer.scss';
 @import './modules/blocks/page-section/_place/page-section_place_proposal.scss';
 @import './modules/blocks/logo/logo.scss';
@@ -16,6 +18,7 @@
 @import './modules/blocks/title/_size/title_size_small.scss';
 @import './modules/blocks/title/_theme/title_theme_light.scss';
 @import './modules/blocks/title/_place/title_place_header.scss';
+@import './modules/blocks/title/_place/title_place_text-card.scss';
 @import './modules/blocks/title/_place/title_place_proposal.scss';
 @import './modules/blocks/title/_place/title_place_form.scss';
 @import './modules/blocks/title/_place/title_place_footer.scss';
@@ -23,6 +26,7 @@
 @import './modules/blocks/subtitle/_place/subtitle_place_header.scss';
 @import './modules/blocks/subtitle/_place/subtitle_place_footer.scss';
 @import './modules/blocks/subtitle/_place/subtitle_place_form.scss';
+//--Кнопки--
 @import './modules/blocks/button/button.scss';
 @import './modules/blocks/button/_theme/button_theme_dark.scss';
 @import './modules/blocks/button/_place/button_place_header.scss';
@@ -33,7 +37,16 @@
 @import './modules/blocks/header/__wrapper/header__wrapper.scss';
 @import './modules/blocks/header/__image/header__image.scss';
 //--+++Основная часть сайта+++--
-//--+++Форма+++--
+//--Карточки с текстом--
+@import './modules/blocks/text-cards/text-cards.scss';
+@import './modules/blocks/text-cards/__item/text-cards__item.scss';
+@import './modules/blocks/text-cards/__tag/text-cards__tag.scss';
+@import './modules/blocks/text-cards/__content/text-cards__content.scss';
+//--Пагинация--
+@import './modules/blocks/pagination/pagination.scss';
+@import './modules/blocks/pagination/__dot/pagination__dot.scss';
+@import './modules/blocks/pagination/__dot/_active/pagination__dot_active.scss';
+//--Форма--
 @import './modules/blocks/form/form.scss';
 @import './modules/blocks/form/__field/form__field.scss';
 @import './modules/blocks/form/__input/form__input.scss';
