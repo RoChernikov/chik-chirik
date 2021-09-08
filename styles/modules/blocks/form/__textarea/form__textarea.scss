@@ -13,6 +13,23 @@
     color: $primaryFontColor;
     opacity: 30%;
   }
+
+  &:hover {
+    padding-top: 14px;
+    padding-left: 19px;
+    box-sizing: border-box;
+    border: 1px solid #e4e4e4;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid #e4e4e4;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
