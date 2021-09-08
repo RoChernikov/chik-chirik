@@ -13,12 +13,14 @@
 @import './modules/blocks/page-section/_place/page-section_place_footer.scss';
 @import './modules/blocks/page-section/_place/page-section_place_proposal.scss';
 @import './modules/blocks/logo/logo.scss';
+@import './modules/blocks/slider/_type/slider_type_img.scss';
 @import './modules/blocks/title/title.scss';
 @import './modules/blocks/title/_size/title_size_big.scss';
 @import './modules/blocks/title/_size/title_size_small.scss';
 @import './modules/blocks/title/_theme/title_theme_light.scss';
 @import './modules/blocks/title/_place/title_place_header.scss';
 @import './modules/blocks/title/_place/title_place_text-card.scss';
+@import './modules/blocks/title/_place/title_place_about.scss';
 @import './modules/blocks/title/_place/title_place_proposal.scss';
 @import './modules/blocks/title/_place/title_place_form.scss';
 @import './modules/blocks/title/_place/title_place_footer.scss';
@@ -42,6 +44,10 @@
 @import './modules/blocks/text-cards/__item/text-cards__item.scss';
 @import './modules/blocks/text-cards/__tag/text-cards__tag.scss';
 @import './modules/blocks/text-cards/__content/text-cards__content.scss';
+//--Карточки с картинками--
+@import './modules/blocks/image-cards/image-cards.scss';
+@import './modules/blocks/image-cards/__item/image-cards__item.scss';
+@import './modules/blocks/image-cards/__img/image-cards__img.scss';
 //--Пагинация--
 @import './modules/blocks/pagination/pagination.scss';
 @import './modules/blocks/pagination/__dot/pagination__dot.scss';
