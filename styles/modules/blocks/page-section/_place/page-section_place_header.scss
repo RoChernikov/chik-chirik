@@ -3,6 +3,13 @@
   grid-template-columns: minmax(min-content, max-content) auto;
   grid-template-rows: repeat(5, min-content);
   align-items: start;
+  min-height: 640px;
+}
+
+@media screen and (max-width: 967px) {
+  .page-section_place_header {
+    min-height: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {

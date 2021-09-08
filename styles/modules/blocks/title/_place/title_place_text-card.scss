@@ -1,0 +1,11 @@
+.title_place_text-card {
+  margin-top: 20px;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .title_place_text-card {
+    margin-top: 12px;
+  }
+}
