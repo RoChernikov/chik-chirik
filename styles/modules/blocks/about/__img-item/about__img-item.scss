@@ -1,0 +1,14 @@
+.about__img-item {
+  width: 100%;
+  margin-right: 25px;
+}
+
+.about__img-item:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .about__img-item {
+    margin-right: 15px;
+  }
+}
