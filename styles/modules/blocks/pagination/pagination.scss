@@ -1,11 +1,7 @@
-.pagination {
-  display: none;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-@media screen and (max-width: 540px) {
-  .pagination {
-    display: flex;
-  }
-}
+    .pagination {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      transition: 300ms opacity;
+      z-index: 10;
+    }
