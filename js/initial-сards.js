@@ -1,26 +1,37 @@
-// const initialCards = [
-//   {
-//     name: 'Архыз',
-//     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg',
-//   },
-//   {
-//     name: 'Челябинская область',
-//     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg',
-//   },
-//   {
-//     name: 'Иваново',
-//     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg',
-//   },
-//   {
-//     name: 'Камчатка',
-//     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg',
-//   },
-//   {
-//     name: 'Холмогорский район',
-//     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg',
-//   },
-//   {
-//     name: 'Байкал',
-//     link: 'https://images.unsplash.com/photo-1548130516-2ca6aaeb84b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-//   },
-// ];
+const imgCards = [{
+    alt: 'Пример 1',
+    link: './images/slider/example_01.png',
+  },
+  {
+    alt: 'Пример 2',
+    link: './images/slider/example_02.png',
+  },
+  {
+    alt: 'Пример 3',
+    link: './images/slider/example_03.png',
+  },
+];
+
+const textCards = [{
+    tag: 'AI',
+    title: 'Умный интелект приложения',
+    content: 'С помощью AI приложение анализирует картины мастеров и современных практиков рисования, и достраивает картину за вас.'
+  },
+  {
+    tag: 'Ч/Б и Цвет',
+    title: 'Рисуйте в любом стиле',
+    content: 'Будь то карандашная каляка-маляка или цветное произведение, приложение поможет в любой ситуации.'
+  },
+];
+
+const textCardsAbout = [{
+    tag: 'Быстро',
+    title: 'Проблем с рисованием — нет',
+    content: 'Рисуйте в приложении доступными кистями: карандаш, маркер, линер, масляная кисть и многие другие...'
+  },
+  {
+    tag: 'Просто',
+    title: 'Нарисовали, преобразовали, сохранили',
+    content: 'Раз, два, три, больше нечего тут рассказать.'
+  },
+];
