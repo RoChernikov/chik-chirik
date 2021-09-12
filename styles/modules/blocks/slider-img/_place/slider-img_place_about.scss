@@ -1,0 +1,9 @@
+.slider-img_place_about {
+  margin: 70px 0;
+}
+
+@media screen and (max-width: $mobileWidth) {
+  .slider-img_place_about {
+    padding: 0 20px;
+  }
+}
