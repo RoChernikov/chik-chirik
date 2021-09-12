@@ -37,8 +37,8 @@
     <section class="about page-section page-section_place_about">
 
       <!-- Блок с карточками №1-->
-      <ul class="cards page-list">
-        <li class="cards__item">
+      <ul class="cards text-cards page-list">
+        <!-- <li class="cards__item">
           <p class="cards__tag page-text">AI</p>
           <h2 class="title title_size_small title_place_card page-text">Умный интелект приложения</h2>
           <p class="cards__content page-text">С&nbsp;помощью&nbsp;AI приложение анализирует картины мастеров
@@ -50,12 +50,12 @@
           <h2 class="title title_size_small title_place_card page-text">Рисуйте в любом стиле</h2>
           <p class="cards__content page-text">Будь то&nbsp;карандашная каляка-маляка или цветное произведение,
             приложение поможет в&nbsp;любой ситуации.</p>
-        </li>
+        </li> -->
       </ul>
       <!-- Слайдер с текстовыми карточками №1-->
       <div class="slider-cards">
-        <ul class="slider-cards__wrapper page-list">
-          <li class="slider-cards__item">
+        <ul class="slider-cards__wrapper slider-top page-list">
+          <!-- <li class="slider-cards__item">
             <p class="slider-cards__tag page-text">AI</p>
             <h2 class="title title_size_small title_place_card page-text">Умный интелект приложения</h2>
             <p class="slider-cards__content page-text">С&nbsp;помощью&nbsp;AI приложение анализирует картины мастеров
@@ -67,7 +67,7 @@
             <h2 class="title title_size_small title_place_card page-text">Рисуйте в любом стиле</h2>
             <p class="slider-cards__content page-text">Будь то&nbsp;карандашная каляка-маляка или цветное произведение,
               приложение поможет в&nbsp;любой ситуации.</p>
-          </li>
+          </li> -->
         </ul>
         <div class="pagination"></div>
       </div>
@@ -78,30 +78,20 @@
 
       <!-- Блок с картинками -->
       <ul class="about__img-list page-list">
-        <!-- <li class="about__img-item"><img src="./images/slider/example_01.png" alt="Пример 1" class="about__img">
-        </li>
-        <li class="about__img-item"><img src="./images/slider/example_02.png.png" alt="Пример 2" class="about__img">
-        </li>
-        <li class="about__img-item"><img src="./images/slider/example_03.png.png" alt="Пример 3" class="about__img">
-        </li> -->
+        <!-- Генерируются по шаблону -->
       </ul>
 
       <!-- Слайдер с картинками -->
       <div class="slider-img">
         <ul class="slider-img__wrapper page-list">
-          <li class="slider-img__item"><img src="./images/slider/example_01.png" alt="Пример 1"
-              class="slider-img__image"></li>
-          <li class="slider-img__item"><img src="./images/slider/example_02.png.png" alt="Пример 2"
-              class="slider-img__image"></li>
-          <li class="slider-img__item"><img src="./images/slider/example_03.png.png" alt="Пример 3"
-              class="slider-img__image"></li>
+          <!-- Генерируются по шаблону -->
         </ul>
         <div class="pagination"></div>
       </div>
 
       <!-- Блок с карточками №2-->
-      <ul class="cards page-list">
-        <li class="cards__item">
+      <ul class="cards cards-about page-list">
+        <!-- <li class="cards__item">
           <p class="cards__tag page-text">Быстро</p>
           <h2 class="title title_size_small title_place_card page-text">Проблем с рисованием — нет</h2>
           <p class="cards__content page-text">Рисуйте в&nbsp;приложении доступными кистями: карандаш, маркер,
@@ -111,13 +101,13 @@
           <p class="cards__tag page-text">Просто</p>
           <h2 class="title title_size_small title_place_card page-text">Нарисовали, преобразовали, сохранили</h2>
           <p class="cards__content page-text">Раз, два, три, больше нечего тут рассказать.</p>
-        </li>
+        </li> -->
       </ul>
 
       <!-- Слайдер с карточками №2 -->
       <div class="slider-cards">
-        <ul class="slider-cards__wrapper page-list">
-          <li class="slider-cards__item">
+        <ul class="slider-cards__wrapper slider-about page-list">
+          <!-- <li class="slider-cards__item">
             <p class="slider-cards__tag page-text">Быстро</p>
             <h2 class="title title_size_small title_place_card page-text">Проблем с рисованием — нет</h2>
             <p class="slider-cards__content page-text">Рисуйте в&nbsp;приложении доступными кистями: карандаш, маркер,
@@ -127,7 +117,7 @@
             <p class="slider-cards__tag page-text">Просто</p>
             <h2 class="title title_size_small title_place_card page-text">Нарисовали, преобразовали, сохранили</h2>
             <p class="slider-cards__content page-text">Раз, два, три, больше нечего тут рассказать.</p>
-          </li>
+          </li> -->
         </ul>
         <div class="pagination"></div>
       </div>
@@ -160,8 +150,34 @@
       <div class="footer__image"></div>
     </div>
   </footer>
-  <script src="./js/initial-сards.js"></script> <!-- Импорт дефолтных карточек -->
+  <!--+++++++Шаблон картинки+++++++-->
+  <template id="img-template">
+    <li class="about__img-item"><img class="about__img">
+    </li>
+  </template>
+  <!--+++++++Шаблон картинки для слайдера+++++++-->
+  <template id="img-template-slider">
+    <li class="slider-img__item"><img class="slider-img__image">
+    </li>
+  </template>
+  <!--+++++++Шаблон карточки с текстом+++++++-->
+  <template id="text-card-template">
+    <li class="cards__item">
+      <p class="cards__tag page-text"></p>
+      <h2 class="title title_size_small title_place_card page-text"></h2>
+      <p class="cards__content page-text"></p>
+    </li>
+  </template>
+  <!--+++++++Шаблон карточки с текстом для слайдера+++++++-->
+  <template id="text-card-slider-template">
+    <li class="slider-cards__item">
+      <p class="slider-cards__tag page-text"></p>
+      <h2 class="title title_size_small title_place_card page-text"></h2>
+      <p class="slider-cards__content page-text"></p>
+    </li>
+  </template>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> <!-- Импорт Swiper JS -->
+  <script src="./js/initial-сards.js"></script> <!-- Импорт дефолтных карточек -->
   <script src="./js/script.js"></script>
 </body>
 
