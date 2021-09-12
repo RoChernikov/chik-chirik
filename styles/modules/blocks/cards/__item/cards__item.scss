@@ -1,4 +1,6 @@
-.cards__item {
+$className: 'cards__item';
+
+.#{$className} {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
@@ -16,16 +18,12 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .cards__item {
-    padding: 0 30px;
-    min-height: 284px;
-    margin-right: 10px;
-  }
+@include breakPoint ($className, $tabletWidth) {
+  padding: 0 30px;
+  min-height: 284px;
+  margin-right: 10px;
 }
 
-@media screen and (max-width: 540px) {
-  .cards__item {
-    padding: 0 20px;
-  }
+@include breakPoint ($className, 540px) {
+  padding: 0 20px;
 }

@@ -1,4 +1,6 @@
-.page-section_place_footer {
+$className: 'page-section_place_footer';
+
+.#{$className} {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -6,14 +8,10 @@
   clip-path: inset(-100vw -100vw -0.04vw -100vw);
 }
 
-@media screen and (max-width: 768px) {
-  .page-section_place_footer {
-    padding: 0 50px;
-  }
+@include breakPoint ($className, $tabletWidth) {
+  padding: 0 50px;
 }
 
-@media screen and (max-width: 483px) {
-  .page-section_place_footer {
-    padding: 0 20px;
-  }
+@include breakPoint ($className, 483px) {
+  padding: 0 20px;
 }

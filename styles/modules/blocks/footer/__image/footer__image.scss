@@ -1,4 +1,6 @@
-.footer__image {
+$className: 'footer__image';
+
+.#{$className} {
   background-image: url(../images/footer_image.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -11,16 +13,12 @@
   -webkit-filter: $shadow;
 }
 
-@media screen and (max-width: 832px) {
-  .footer__image {
-    width: 250px;
-    height: 502px;
-    right: 69px;
-  }
+@include breakPoint ($className, 832px) {
+  width: 250px;
+  height: 502px;
+  right: 69px;
 }
 
-@media screen and (max-width: 679px) {
-  .footer__image {
-    display: none;
-  }
+@include breakPoint ($className, 679px) {
+  display: none;
 }

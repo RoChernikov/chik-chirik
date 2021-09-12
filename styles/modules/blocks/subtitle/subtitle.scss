@@ -1,4 +1,6 @@
-.subtitle {
+$className: 'subtitle';
+
+.#{$className} {
   font-family: $primaryFont;
   font-size: 16px;
   font-weight: 400;
@@ -7,9 +9,7 @@
   color: $primaryFontColor;
 }
 
-@media screen and (max-width: 768px) {
-  .subtitle {
-    font-size: 15px;
-    line-height: 1.3;
-  }
+@include breakPoint ($className, $tabletWidth) {
+  font-size: 15px;
+  line-height: 1.3;
 }

@@ -1,12 +1,12 @@
-.slider-img__item {
+$className: 'slider-img__item';
+
+.#{$className} {
   display: flex;
   justify-content: center;
   flex-shrink: 0;
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .slider-img__item {
-    margin-right: 15px;
-  }
+@include breakPoint ($className, $tabletWidth) {
+  margin-right: 15px;
 }

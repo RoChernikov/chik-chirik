@@ -1,26 +1,22 @@
-.title_place_footer {
+$className: 'title_place_footer';
+
+.#{$className} {
   line-height: 1.19;
   margin-top: 60px;
   max-width: 460px;
 }
 
-@media screen and (max-width: 967px) {
-  .title_place_footer {
-    margin-top: 50px;
-  }
+@include breakPoint ($className, 967px) {
+  margin-top: 50px;
 }
 
-@media screen and (max-width: 768px) {
-  .title_place_footer {
-    font-size: 32px;
-    line-height: 1.19;
-  }
+@include breakPoint ($className, $tabletWidth) {
+  font-size: 32px;
+  line-height: 1.19;
 }
 
-@media screen and (max-width: 679px) {
-  .title_place_footer {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: 700;
-  }
+@include breakPoint ($className, 679px) {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
 }

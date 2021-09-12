@@ -1,4 +1,6 @@
-.subtitle_place_footer {
+$className: 'subtitle_place_footer';
+
+.#{$className} {
   margin-top: 20px;
   font-size: 18px;
   line-height: 1.4;
@@ -6,9 +8,7 @@
   color: $secondaryFontColor;
 }
 
-@media screen and (max-width: 679px) {
-  .subtitle_place_footer {
-    margin-top: 14px;
-    font-size: 12px;
-  }
+@include breakPoint ($className, 679px) {
+  margin-top: 14px;
+  font-size: 12px;
 }

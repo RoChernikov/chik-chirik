@@ -1,11 +1,11 @@
-.slider-img {
+$className: 'slider-img';
+
+.#{$className} {
   display: none;
   overflow: hidden;
   position: relative;
 }
 
-@media screen and (max-width: $mobileWidth) {
-  .slider-img {
-    display: block;
-  }
+@include breakPoint ($className, $mobileWidth) {
+  display: block;
 }

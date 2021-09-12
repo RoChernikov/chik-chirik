@@ -1,4 +1,6 @@
-.header__logo {
+$className: 'header__logo';
+
+.#{$className} {
   background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -8,8 +10,6 @@
   align-self: start;
 }
 
-@media screen and (max-width: 483px) {
-  .header__logo {
-    margin-top: 20px;
-  }
+@include breakPoint ($className, 483px) {
+  margin-top: 20px;
 }

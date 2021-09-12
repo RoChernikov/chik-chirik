@@ -1,15 +1,9 @@
-.title_place_proposal {
-  // padding: 0 30px;
+$className: 'title_place_proposal';
+
+@include breakPoint ($className, $tabletWidth) {
+  padding: 0 30px;
 }
 
-@media screen and (max-width: 768px) {
-  .title_place_proposal {
-    padding: 0 30px;
-  }
-}
-
-@media screen and (max-width: 399px) {
-  .title_place_proposal {
-    padding: 0 20px;
-  }
+@include breakPoint ($className, 399px) {
+  padding: 0 20px;
 }

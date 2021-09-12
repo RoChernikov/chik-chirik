@@ -1,4 +1,6 @@
-.button {
+$className: 'button';
+
+.#{$className} {
   width: 240px;
   height: 54px;
   border: none;
@@ -23,18 +25,14 @@
   }
 }
 
-@media screen and (max-width: 967px) {
-  .button {
-    height: 48px;
-    font-size: 14px;
-  }
+@include breakPoint ($className, 967px) {
+  height: 48px;
+  font-size: 14px;
 }
 
-@media screen and (max-width: 510px) {
-  .button {
-    height: 44px;
-    width: 260px;
-    font-size: 12px;
-    line-height: 2;
-  }
+@include breakPoint ($className, 510px) {
+  height: 44px;
+  width: 260px;
+  font-size: 12px;
+  line-height: 2;
 }
