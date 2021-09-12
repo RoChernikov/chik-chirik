@@ -1,10 +1,10 @@
-$className: 'page-section_place_proposal';
+$className: 'content__section_place_about';
 
 .#{$className} {
-  margin: 120px 0;
+  margin-top: 60px;
   padding: 0;
 }
 
 @include breakPoint ($className, $tabletWidth) {
-  margin: 70px 0;
+  margin-top: 70px;
 }

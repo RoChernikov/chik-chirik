@@ -1,6 +1,10 @@
-$className: 'page-section_place_footer';
+$className: 'footer__wrapper';
 
 .#{$className} {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
   position: relative;
   display: flex;
   flex-direction: column;
