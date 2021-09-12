@@ -1,8 +1,9 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
-@import url(../node_modules/swiper/swiper-bundle.min.css);
 //--+++Переменные+++--
 @import './modules/veriables.scss';
+//--+++Миксины+++--
+@import './modules/mixins.scss';
 //--+++Страница+++--
 @import './modules/blocks/page/page.scss';
 @import './modules/blocks/page-text/page-text.scss';
@@ -13,7 +14,6 @@
 @import './modules/blocks/page-section/_place/page-section_place_about.scss';
 @import './modules/blocks/page-section/_place/page-section_place_footer.scss';
 @import './modules/blocks/page-section/_place/page-section_place_proposal.scss';
-@import './modules/blocks/logo/logo.scss';
 //--Заголовки--
 @import './modules/blocks/title/title.scss';
 @import './modules/blocks/title/_size/title_size_big.scss';
@@ -25,6 +25,7 @@
 @import './modules/blocks/title/_place/title_place_proposal.scss';
 @import './modules/blocks/title/_place/title_place_form.scss';
 @import './modules/blocks/title/_place/title_place_footer.scss';
+//--Подзаголовки--
 @import './modules/blocks/subtitle/subtitle.scss';
 @import './modules/blocks/subtitle/_place/subtitle_place_header.scss';
 @import './modules/blocks/subtitle/_place/subtitle_place_footer.scss';
@@ -39,6 +40,7 @@
 @import './modules/blocks/header/header.scss';
 @import './modules/blocks/header/__wrapper/header__wrapper.scss';
 @import './modules/blocks/header/__image/header__image.scss';
+@import './modules/blocks/header/__logo/header__logo.scss';
 //--+++Основная часть сайта+++--
 //--Блок с карточками--
 @import './modules/blocks/cards/cards.scss';
@@ -51,21 +53,25 @@
 @import './modules/blocks/slider-cards/__item/slider-cards__item.scss';
 @import './modules/blocks/slider-cards/__tag/slider-cards_tag.scss';
 @import './modules/blocks/slider-cards/__content/slider-cards__content.scss';
+@import './modules/blocks/slider-cards/__pagination/slider-cards__pagination.scss';
+@import './modules/blocks/slider-cards/__bullet/slider-cards__bullet.scss';
+@import './modules/blocks/slider-cards/__bullet/_active/slider-cards__bullet_active.scss';
 //--Блок с картинками--
 @import './modules/blocks/about/__img-list/about__img-list.scss';
 @import './modules/blocks/about/__img-item/about__img-item.scss';
 @import './modules/blocks/about/__img/about__img.scss';
 //--Слайдер с картинками--
 @import './modules/blocks/slider-img/slider-img.scss';
+@import './modules/blocks/slider-img/_place/slider-img_place_about.scss';
 @import './modules/blocks/slider-img/__wrapper/slider-img__wrapper.scss';
 @import './modules/blocks/slider-img/__item/slider-img__item.scss';
 @import './modules/blocks/slider-img/__image/slider-img__image.scss';
-//--Пагинация--
-@import './modules/blocks/pagination/pagination.scss';
-@import './modules/blocks/pagination/__bullet/pagination__bullet.scss';
-@import './modules/blocks/pagination/__bullet/_active/pagination__bullet_active.scss';
+@import './modules/blocks/slider-img/__pagination/slider-img__pagination.scss';
+@import './modules/blocks/slider-img/__bullet/slider-img__bullet.scss';
+@import './modules/blocks/slider-img/__bullet/_active/slider-img__bullet_active.scss';
 //--Форма--
 @import './modules/blocks/form/form.scss';
+@import './modules/blocks/form/_place/form_place_about.scss';
 @import './modules/blocks/form/__field/form__field.scss';
 @import './modules/blocks/form/__input/form__input.scss';
 @import './modules/blocks/form/__textarea/form__textarea.scss';

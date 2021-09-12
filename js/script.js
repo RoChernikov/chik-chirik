@@ -21,9 +21,9 @@ const textCardsSlider = new Swiper('.slider-cards', {
 
   // Пагинация
   pagination: {
-    el: '.pagination',
-    bulletClass: 'pagination__bullet',
-    bulletActiveClass: 'pagination__bullet_active',
+    el: '.slider-cards__pagination',
+    bulletClass: 'slider-cards__bullet',
+    bulletActiveClass: 'slider-cards__bullet_active',
     clickable: false,
   },
 });
@@ -40,9 +40,9 @@ const imageCardsSlider = new Swiper('.slider-img', {
 
   // Пагинация
   pagination: {
-    el: '.pagination',
-    bulletClass: 'pagination__bullet',
-    bulletActiveClass: 'pagination__bullet_active',
+    el: '.slider-img__pagination',
+    bulletClass: 'slider-img__bullet',
+    bulletActiveClass: 'slider-img__bullet_active',
     clickable: false,
   },
 });
