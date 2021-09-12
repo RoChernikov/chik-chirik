@@ -1,4 +1,6 @@
-.slider-cards__item {
+$className: 'slider-cards__item';
+
+.#{$className} {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
@@ -12,8 +14,6 @@
   flex-shrink: 0;
 }
 
-@media screen and (max-width: 540px) {
-  .slider-cards__item {
-    padding: 0 20px;
-  }
+@include breakPoint ($className, 540px) {
+  padding: 0 20px;
 }

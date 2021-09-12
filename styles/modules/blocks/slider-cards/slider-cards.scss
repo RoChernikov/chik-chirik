@@ -1,11 +1,11 @@
-.slider-cards {
+$className: 'slider-cards';
+
+.#{$className} {
   display: none;
   overflow: hidden;
   position: relative;
 }
 
-@media screen and (max-width: $mobileWidth) {
-  .slider-cards {
-    display: block;
-  }
+@include breakPoint ($className, $mobileWidth) {
+  display: block;
 }

@@ -1,9 +1,9 @@
-.cards {
+$className: 'cards';
+
+.#{$className} {
   display: flex;
 }
 
-@media screen and (max-width: $mobileWidth) {
-  .cards {
-    display: none;
-  }
+@include breakPoint ($className, $mobileWidth) {
+  display: none;
 }

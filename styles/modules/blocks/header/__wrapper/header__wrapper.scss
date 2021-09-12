@@ -1,11 +1,11 @@
-.header__wrapper {
+$className: 'header__wrapper';
+
+.#{$className} {
   display: flex;
   flex-direction: column;
   max-width: 650px;
 }
 
-@media screen and (max-width: 483px) {
-  .header__wrapper {
-    align-items: center;
-  }
+@include breakPoint ($className, 483px) {
+  align-items: center;
 }

@@ -1,4 +1,6 @@
-.form__input {
+$className: 'form__input';
+
+.#{$className} {
   color: $primaryFontColor;
   padding-left: 20px;
   height: 54px;
@@ -28,14 +30,12 @@
   }
 }
 
-@media screen and (max-width: 510px) {
-  .form__input {
+@include breakPoint ($className, 510px) {
+  font-size: 12px;
+  line-height: 2;
+
+  &::placeholder {
     font-size: 12px;
     line-height: 2;
-
-    &::placeholder {
-      font-size: 12px;
-      line-height: 2;
-    }
   }
 }

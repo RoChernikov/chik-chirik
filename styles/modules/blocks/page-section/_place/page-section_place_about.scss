@@ -1,10 +1,10 @@
-.page-section_place_about {
+$className: 'page-section_place_about';
+
+.#{$className} {
   margin-top: 60px;
   padding: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .page-section_place_about {
-    margin-top: 70px;
-  }
+@include breakPoint ($className, $tabletWidth) {
+  margin-top: 70px;
 }

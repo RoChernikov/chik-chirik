@@ -1,4 +1,6 @@
-.subtitle_place_header {
+$className: 'subtitle_place_header';
+
+.#{$className} {
   margin-top: 28px;
   font-size: 18px;
   line-height: 1.4;
@@ -7,24 +9,18 @@
   color: $secondaryFontColor;
 }
 
-@media screen and (max-width: 967px) {
-  .subtitle_place_header {
-    margin-top: 20px;
-    font-size: 15px;
-    width: 360px;
-  }
+@include breakPoint ($className, 967px) {
+  margin-top: 20px;
+  font-size: 15px;
+  width: 360px;
 }
 
-@media screen and (max-width: 767px) {
-  .subtitle_place_header {
-    justify-self: center;
-  }
+@include breakPoint ($className, 767px) {
+  justify-self: center;
 }
 
-@media screen and (max-width: 626px) {
-  .subtitle_place_header {
-    margin-top: 14px;
-    font-size: 12px;
-    width: 260px;
-  }
+@include breakPoint ($className, 626px) {
+  margin-top: 14px;
+  font-size: 12px;
+  width: 260px;
 }
