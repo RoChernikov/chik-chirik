@@ -4,16 +4,12 @@
 @import './modules/veriables.scss';
 //--+++Миксины+++--
 @import './modules/mixins.scss';
-//--+++Страница+++--
+//--+++Global+++--
 @import './modules/blocks/page/page.scss';
+@import './modules/blocks/page/__section/page__section.scss';
+@import './modules/blocks/page/__section/_place/page__section_place_global.scss';
 @import './modules/blocks/page-text/page-text.scss';
 @import './modules/blocks/page-list/page-list.scss';
-@import './modules/blocks/page-section/page-section.scss';
-@import './modules/blocks/page-section/_place/page-section_place_page.scss';
-@import './modules/blocks/page-section/_place/page-section_place_header.scss';
-@import './modules/blocks/page-section/_place/page-section_place_about.scss';
-@import './modules/blocks/page-section/_place/page-section_place_footer.scss';
-@import './modules/blocks/page-section/_place/page-section_place_proposal.scss';
 //--Заголовки--
 @import './modules/blocks/title/title.scss';
 @import './modules/blocks/title/_size/title_size_big.scss';
@@ -42,6 +38,10 @@
 @import './modules/blocks/header/__image/header__image.scss';
 @import './modules/blocks/header/__logo/header__logo.scss';
 //--+++Основная часть сайта+++--
+// Content
+@import './modules/blocks/content/__section/content__section.scss';
+@import './modules/blocks/content/__section/_place/content__section_place_about.scss';
+@import './modules/blocks/content/__section/_place/content__section_place_proposal.scss';
 //--Блок с карточками--
 @import './modules/blocks/cards/cards.scss';
 @import './modules/blocks/cards/__item/cards__item.scss';
@@ -77,4 +77,5 @@
 @import './modules/blocks/form/__textarea/form__textarea.scss';
 //--+++Подвал сайта+++--
 @import './modules/blocks/footer/footer.scss';
+@import './modules/blocks/footer/__wrapper/footer__wrapper.scss';
 @import './modules/blocks/footer/__image/footer__image.scss';
