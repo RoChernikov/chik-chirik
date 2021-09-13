@@ -1,6 +1,20 @@
-.footer {
+$className: 'footer';
+
+.#{$className} {
   background-color: $darkAccent;
   width: 100%;
   border-radius: 20px;
   color: $SubColor;
+  display: flex;
+  flex-direction: column;
+  -webkit-clip-path: inset(-100vw -100vw -0.04vw -100vw);
+  clip-path: inset(-100vw -100vw -0.04vw -100vw);
+}
+
+@include breakPoint ($className, $tabletWidth) {
+  padding: 0 50px;
+}
+
+@include breakPoint ($className, 380px) {
+  padding: 0 20px;
 }
