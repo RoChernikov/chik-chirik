@@ -5,16 +5,24 @@ $className: 'footer';
   width: 100%;
   border-radius: 20px;
   color: $SubColor;
-  display: flex;
-  flex-direction: column;
-  -webkit-clip-path: inset(-100vw -100vw -0.04vw -100vw);
-  clip-path: inset(-100vw -100vw -0.04vw -100vw);
+  display: grid;
+  grid-template-columns: minmax(min-content, 470px) minmax(370px, 1fr);
+  grid-template-rows: min-content;
+  max-height: 470px;
 }
 
 @include breakPoint ($className, $tabletWidth) {
+  grid-template-columns: minmax(min-content, 470px) 1fr;
   padding: 0 50px;
+  max-height: 400px;
 }
 
-@include breakPoint ($className, 380px) {
+@include breakPoint ($className, 685px) {
+  grid-template-columns: 1fr;
+
+}
+
+@include breakPoint ($className, 320px) {
   padding: 0 20px;
+  justify-content: start;
 }

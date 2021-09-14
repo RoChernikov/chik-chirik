@@ -9,7 +9,7 @@ $className: 'header__subtitle';
   color: $secondaryFontColor;
 }
 
-@include breakPoint ($className, 967px) {
+@include breakPoint ($className, 1050px) {
   margin-top: 20px;
   font-size: 15px;
   width: 360px;

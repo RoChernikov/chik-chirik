@@ -6,13 +6,13 @@ $className: 'header';
   border-radius: 20px;
   color: $SubColor;
   display: grid;
-  grid-template-columns: minmax(min-content, max-content) auto;
+  grid-template-columns: minmax(min-content, 650px) auto;
   grid-template-rows: repeat(5, min-content);
   align-items: start;
   min-height: 640px;
 }
 
-@include breakPoint ($className, 967px) {
+@include breakPoint ($className, 1050px) {
   min-height: 0;
 }
 
@@ -25,7 +25,12 @@ $className: 'header';
   justify-content: center;
 }
 
-@include breakPoint ($className, 483px) {
+@include breakPoint ($className, 488px) {
+  text-align: center;
+}
+
+@include breakPoint ($className, 320px) {
   padding: 0 20px;
   border-radius: 10px;
+  text-align: start;
 }

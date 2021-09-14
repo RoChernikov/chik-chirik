@@ -8,7 +8,7 @@ $className: 'header__title';
   color: $secondaryFontColor;
 }
 
-@include breakPoint ($className, 967px) {
+@include breakPoint ($className, 1050px) {
   margin-top: 50px;
   font-size: 33px;
   line-height: 1.12;

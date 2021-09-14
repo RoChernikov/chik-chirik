@@ -1,5 +1,7 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
+//--+++Swiper JS+++--
+@import url(https://unpkg.com/swiper@7/swiper-bundle.min.css);
 //--+++Переменные+++--
 @import './modules/veriables.scss';
 //--+++Миксины+++--
@@ -22,7 +24,6 @@
 @import './modules/blocks/button/_place/button_place_form.scss';
 //--+++Шапка сайта+++--
 @import './modules/blocks/header/header.scss';
-@import './modules/blocks/header/__wrapper/header__wrapper.scss';
 @import './modules/blocks/header/__title/header__title.scss';
 @import './modules/blocks/header/__subtitle/header__subtitle.scss';
 @import './modules/blocks/header/__image/header__image.scss';

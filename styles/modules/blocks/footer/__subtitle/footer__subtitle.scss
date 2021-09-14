@@ -8,7 +8,7 @@ $className: 'footer__subtitle';
   color: $secondaryFontColor;
 }
 
-@include breakPoint ($className, 679px) {
+@include breakPoint ($className, 685px) {
   margin-top: 14px;
   font-size: 12px;
 }
