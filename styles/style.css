@@ -16,13 +16,10 @@
 
 .page__wrapper {
   max-width: 1200px;
-  min-height: 100vh;
   margin: 0 auto;
   padding: 10px;
   box-sizing: border-box;
   max-width: 1440px;
-  display: flex;
-  flex-direction: column;
 }
 
 .page__section {
@@ -218,7 +215,6 @@
   grid-template-rows: repeat(5, min-content);
   align-items: start;
   min-height: 640px;
-  flex-shrink: 0;
 }
 
 @media screen and (max-width: 1050px) {
@@ -349,10 +345,6 @@
     margin-top: 20px;
   }
 }
-.content {
-  flex: 1 1 auto;
-}
-
 .content__section {
   max-width: 1200px;
   margin: 0 auto;
@@ -902,7 +894,6 @@
   grid-template-columns: minmax(min-content, 470px) minmax(370px, 1fr);
   grid-template-rows: min-content;
   max-height: 470px;
-  flex-shrink: 0;
 }
 
 @media screen and (max-width: 967px) {
