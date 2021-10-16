@@ -10,6 +10,6 @@ $className: 'header__logo';
   align-self: start;
 }
 
-@include breakPoint ($className, 483px) {
+@include breakPoint($className, 483px) {
   margin-top: 20px;
 }

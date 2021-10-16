@@ -17,14 +17,14 @@ $className: 'header__image';
   z-index: 2;
 }
 
-@include breakPoint ($className, 1050px) {
+@include breakPoint($className, 1050px) {
   width: 250px;
   height: 502px;
   top: 120px;
   margin-left: 43px;
 }
 
-@include breakPoint ($className, 767px) {
+@include breakPoint($className, 767px) {
   width: 260px;
   height: 522px;
   top: 0;

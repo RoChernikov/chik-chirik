@@ -18,21 +18,21 @@ $className: 'footer__image';
   justify-self: end;
 }
 
-@include breakPoint ($className, 1170px) {
+@include breakPoint($className, 1170px) {
   margin-right: 0;
 }
 
-@include breakPoint ($className, $tabletWidth) {
+@include breakPoint($className, $tabletWidth) {
   width: 250px;
   height: 432px;
   margin-right: 19px;
   top: -32px;
 }
 
-@include breakPoint ($className, 767px) {
+@include breakPoint($className, 767px) {
   margin-right: 0;
 }
 
-@include breakPoint ($className, 685px) {
+@include breakPoint($className, 685px) {
   display: none;
 }

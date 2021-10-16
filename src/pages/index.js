@@ -1,13 +1,28 @@
+import './index.scss';
+import {
+  imgCards,
+  textCards,
+  textCardsAbout
+} from '../components/initial-сards';
+
+// --+++Импорт Swiper+++--
+import Swiper, { Navigation, Pagination } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+Swiper.use([Navigation, Pagination]);
+
 // --+++Переменные для скролла по нажатию кнопки в шапке+++--
 const detailsBtn = document.querySelector('.button_place_header');
 const detailsInfo = document.querySelector('.about__title');
 // -----------------------------------------------------------------
 
 // --+++Функция скролла по нажатию кнопки в шапке+++--
-detailsBtn.onclick = () => detailsInfo.scrollIntoView({
-  block: "start",
-  behavior: "smooth"
-});
+detailsBtn.onclick = () =>
+  detailsInfo.scrollIntoView({
+    block: 'start',
+    behavior: 'smooth'
+  });
 // -----------------------------------------------------------------
 
 // --+++Инициализация Swiper JS для слайдера с карточками+++--
@@ -24,8 +39,8 @@ const textCardsSlider = new Swiper('.slider-cards', {
     el: '.slider-cards__pagination',
     bulletClass: 'slider-cards__bullet',
     bulletActiveClass: 'slider-cards__bullet_active',
-    clickable: false,
-  },
+    clickable: false
+  }
 });
 // -----------------------------------------------------------------
 
@@ -43,8 +58,8 @@ const imageCardsSlider = new Swiper('.slider-img', {
     el: '.slider-img__pagination',
     bulletClass: 'slider-img__bullet',
     bulletActiveClass: 'slider-img__bullet_active',
-    clickable: false,
-  },
+    clickable: false
+  }
 });
 // -----------------------------------------------------------------
 
@@ -57,19 +72,22 @@ function createImg(data) {
   return img;
 }
 // --+++Функция добавления картинки+++--
-const addImg = (data) => document.querySelector('.about__img-list').append(createImg(data));
+const addImg = data =>
+  document.querySelector('.about__img-list').append(createImg(data));
 // -----------------------------------------------------------------
 
 // --+++Функция создания картинки (слайдер)+++--
 function createImgSlider(data) {
   const template = document.querySelector('#img-template-slider').content;
   const img = template.querySelector('.slider-img__item').cloneNode(true);
-  img.querySelector('.slider-img__image').src = `${data.link}`;
+  img.querySelector('.slider-img__image').src =
+    './images/slider/example_01.png';
   img.querySelector('.slider-img__image').alt = `${data.alt}`;
   return img;
 }
 // --+++Функция добавления картинки (слайдер)+++--
-const addImgSlider = (data) => document.querySelector('.slider-img__wrapper').append(createImgSlider(data));
+const addImgSlider = data =>
+  document.querySelector('.slider-img__wrapper').append(createImgSlider(data));
 // -----------------------------------------------------------------
 
 // --+++Функция создания карточки с текстом+++--
@@ -82,11 +100,13 @@ function createTextCard(data) {
   return card;
 }
 // --+++Функция добавления карточки с текстом+++--
-const addTextCard = (data) => document.querySelector('.text-cards').append(createTextCard(data));
+const addTextCard = data =>
+  document.querySelector('.text-cards').append(createTextCard(data));
 // -----------------------------------------------------------------
 
 // --+++Функция добавления карточки с текстом (about)+++--
-const addTextCardAbout = (data) => document.querySelector('.about__cards').append(createTextCard(data));
+const addTextCardAbout = data =>
+  document.querySelector('.about__cards').append(createTextCard(data));
 // -----------------------------------------------------------------
 
 // --+++Функция создания карточки с текстом (слайдер)+++--
@@ -99,31 +119,33 @@ function createTextCardSlider(data) {
   return card;
 }
 // --+++Функция добавления карточки с текстом (слайдер)+++--
-const addTextCardSlider = (data) => document.querySelector('.slider-top').append(createTextCardSlider(data));
+const addTextCardSlider = data =>
+  document.querySelector('.slider-top').append(createTextCardSlider(data));
 // -----------------------------------------------------------------
 
 // --+++Функция добавления карточки с текстом (слайдер) (about)+++--
-const addTextCardAboutSlider = (data) => document.querySelector('.slider-about').append(createTextCardSlider(data));
+const addTextCardAboutSlider = data =>
+  document.querySelector('.slider-about').append(createTextCardSlider(data));
 // -----------------------------------------------------------------
 
 //---+++Заполняем страницу дефолтными карточками+++---
 function generateInitialCards(imgCards, textCards, textCardsAbout) {
-  imgCards.forEach((data) => {
+  imgCards.forEach(data => {
     addImg(data);
   });
-  imgCards.forEach((data) => {
+  imgCards.forEach(data => {
     addImgSlider(data);
   });
-  textCards.forEach((data) => {
+  textCards.forEach(data => {
     addTextCard(data);
   });
-  textCardsAbout.forEach((data) => {
+  textCardsAbout.forEach(data => {
     addTextCardAbout(data);
   });
-  textCards.forEach((data) => {
+  textCards.forEach(data => {
     addTextCardSlider(data);
   });
-  textCardsAbout.forEach((data) => {
+  textCardsAbout.forEach(data => {
     addTextCardAboutSlider(data);
   });
 }
