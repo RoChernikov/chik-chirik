@@ -1,15 +1,19 @@
+import firstExampleImage from '../images/slider/example_01.png';
+import secondExampleImage from '../images/slider/example_02.png';
+import thirdExampleImage from '../images/slider/example_03.png';
+
 export const imgCards = [
   {
     alt: 'Пример 1',
-    link: './images/slider/example_01.png'
+    link: firstExampleImage
   },
   {
     alt: 'Пример 2',
-    link: './images/slider/example_02.png'
+    link: secondExampleImage
   },
   {
     alt: 'Пример 3',
-    link: './images/slider/example_03.png'
+    link: thirdExampleImage
   }
 ];
 

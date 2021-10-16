@@ -80,8 +80,7 @@ const addImg = data =>
 function createImgSlider(data) {
   const template = document.querySelector('#img-template-slider').content;
   const img = template.querySelector('.slider-img__item').cloneNode(true);
-  img.querySelector('.slider-img__image').src =
-    './images/slider/example_01.png';
+  img.querySelector('.slider-img__image').src = `${data.link}`;
   img.querySelector('.slider-img__image').alt = `${data.alt}`;
   return img;
 }
